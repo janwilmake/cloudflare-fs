@@ -42,6 +42,7 @@ new_sqlite_classes = ["DOFS"]
 - **Limited encoding support** - only basic TextEncoder/TextDecoder
 - **Limited max filesize** - capped at the max rowsize of 2MB
 - **Limited max total disk size** - capped at 10GB per disk\*
+- Every fs request does a round-trip to the DO! This can make these operations rather slow if you have lots of them if the DO is not in the same place as the worker. I wonder though, how fast it will be if ran from a DO in the same spot.
 
 # How do disks work?
 
