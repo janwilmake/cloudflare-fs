@@ -7,6 +7,7 @@ npm i cloudflare-fs
 Usage:
 
 ```js
+// worker.js
 import { writeFile, DOFS } from "cloudflare-fs";
 export { DOFS };
 export default {
@@ -15,6 +16,18 @@ export default {
     return new Response("written!");
   },
 };
+```
+
+Add to your `wrangler.toml`
+
+```toml
+[[durable_objects.bindings]]
+name = "DOFS"
+class_name = "DOFS"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["DOFS"]
 ```
 
 # Limitations compared to Node.js fs:
