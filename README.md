@@ -1,3 +1,5 @@
+[![](https://badge.forgithub.com/janwilmake/cloudflare-fs)](https://uithub.com/janwilmake/cloudflare-fs) [![](https://badge.xymake.com/janwilmake/status/1946939223673544864)](https://x.com/janwilmake/status/1946939223673544864) [![](https://b.letmeprompt.com)](https://letmeprompt.com?q=https://uithub.com/janwilmake/cloudflare-fs)
+
 This package implements an opinionated durable object powered file-system that aims to replicate the exact node `fs/promises` api and make it available in workers.
 
 ```
