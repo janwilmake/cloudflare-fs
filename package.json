@@ -1,0 +1,11 @@
+{
+  "name": "cloudflare-fs",
+  "version": "0.0.1",
+  "main": "fs.js",
+  "files": [
+    "fs.js"
+  ],
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250719.0"
+  }
+}

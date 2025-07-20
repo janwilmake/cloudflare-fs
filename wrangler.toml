@@ -1,0 +1,13 @@
+name = "fs-test-worker"
+main = "test.js"
+compatibility_date = "2025-07-15"
+route.custom_domain = true
+route.pattern = "fs.itscooldo.com"
+
+[[durable_objects.bindings]]
+name = "DOFS"
+class_name = "DOFS"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["DOFS"]
